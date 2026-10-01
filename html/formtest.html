@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+</head>
+<body>
+    <h1>Welcome to WebServ</h1>
+    <p>This is the truc index page.</p>
+    <nav>
+        <ul>
+            <li><a href="page1.html">Page 1</a></li>
+            <li><a href="page2.html">Page 2</a></li>
+            <li><a href="page3.html">Page 3</a></li>
+            <li><a href="page4.html">Page 4</a></li>
+            <li><a href="page5.html">Page 5</a></li>
+        </ul>
+    </nav>
+    <h2>
+        Un Form envoyant un fichier chunked
+    </h2>
+    <form method="post" action="filetest" enctype="multipart/form-data">
+        <div>
+          <label for="file">Choisir un fichier</label>
+          <input type="file" id="file" name="myFile" />
+        </div>
+        <div>
+          <button>Envoyer le fichier</button>
+        </div>
+      </form>
+      <h2>
+        Un Form envoyant des informations dans le body
+      </h2>
+      <form action="YOUR_SERVER_ENDPOINT" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+  
